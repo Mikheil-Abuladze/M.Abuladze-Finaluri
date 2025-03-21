@@ -4,10 +4,61 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  height: 960px;
+}
+.container span {
+  top: 48px;
+  left: 52px;
+  height: 56px;
+  position: absolute;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2px;
+  font-size: 40px;
+  font-family: "poppins-extrabold";
+  width: 113px;
+}
+.dot {
+  color: #0081ff;
+  margin-top: 8px;
+  margin-left: 105px;
+  font-size: 33px;
+}
+.resume {
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 50px;
+  margin-left: 3px;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 119px;
+}
+.about-me-01 {
+  position: absolute;
+  right: 200px;
+}
+.aboutme {
+  font-size: 43.17px;
+  color: #373737;
+}
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url(Staff/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(Staff/fonts/Montserrat-Regular.ttf);
+}
 .hero {
+  position: relative;
   text-align: center;
   background: #f4f4f4;
-  padding: 50px;
   animation: fadeIn 2s ease-in-out;
 }
 .hero h1 {
