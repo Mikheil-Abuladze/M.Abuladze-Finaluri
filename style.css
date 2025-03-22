@@ -41,11 +41,27 @@ body {
 }
 .about-me-01 {
   position: absolute;
-  right: 200px;
+  right: 300px;
+  font-size: 153px;
+  font-family: "poppins-extrabold";
+}
+.nullone {
+  position: absolute;
+  top: 0;
 }
 .aboutme {
   font-size: 43.17px;
   color: #373737;
+  font-family: "poppins-extrabold";
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hi {
+  margin-top: 385px;
+  margin-left: 1029px;
+  text-align: left;
 }
 @font-face {
   font-family: "poppins-extrabold";
@@ -55,6 +71,8 @@ body {
   font-family: "Montserrat-Regular";
   src: url(Staff/fonts/Montserrat-Regular.ttf);
 }
+/* loading bar */
+/* loading bar */
 .hero {
   position: relative;
   text-align: center;
