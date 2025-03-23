@@ -44,24 +44,39 @@ body {
   right: 300px;
   font-size: 153px;
   font-family: "poppins-extrabold";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
 }
 .nullone {
   position: absolute;
-  top: 0;
+  top: -20px;
+  right: 0px;
+  font-size: 153px;
+  font-family: "poppins-extrabold";
+  grid-area: 1/1;
+  z-index: 10;
 }
 .aboutme {
   font-size: 43.17px;
   color: #373737;
   font-family: "poppins-extrabold";
   clear: both;
-  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  grid-area: 1/1;
+  z-index: 11;
+  text-align: center;
 }
 .hi {
   margin-top: 385px;
   margin-left: 1029px;
   text-align: left;
+  font-family: "GlacialIndifference-Bold";
+}
+.my-proffession {
+  font-family: "GlacialIndifference-Regular";
 }
 @font-face {
   font-family: "poppins-extrabold";
@@ -71,7 +86,52 @@ body {
   font-family: "Montserrat-Regular";
   src: url(Staff/fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(Staff/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "GlacialIndifference-Bold";
+  src: url(Staff/fonts/GlacialIndifference-Bold.ttf);
+}
+@font-face {
+  font-family: "GlacialIndifference-Regular";
+  src: url(Staff/fonts/GlacialIndifference-Regular.ttf);
+}
+
 /* loading bar */
+.onehundred {
+  color: red;
+}
+.satisfied {
+  position: absolute;
+  margin-left: 1462px;
+  margin-top: -200px;
+  text-align: left;
+  font-family: "Montserrat-Bold";
+}
+.progress-bar {
+  width: 340px;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  position: absolute;
+  height: 100%;
+  border-radius: 2px;
+  width: 100%;
+  transform: scale(0);
+  background-color: #e93656;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scale(1);
+  }
+}
 /* loading bar */
 .hero {
   position: relative;
