@@ -178,7 +178,41 @@ body {
   background-color: #131a36;
   width: 1820px;
   height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.contact-info-phone {
+  border-color: #ddd;
+  border-width: 5px;
+  border-style: dotted;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+.icon {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 30px;
+}
+.Phone-number {
+  color: white;
+  display: flex;
+  width: 300px;
+  padding-left: 100px;
+  margin-bottom: 3px;
+  position: absolute;
+  top: -25;
+}
+.Phone-number h3 {
+  top: -50px;
+  position: absolute;
+}
+
 .hero {
   position: relative;
   text-align: center;
