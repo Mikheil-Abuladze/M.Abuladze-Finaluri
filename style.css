@@ -409,9 +409,10 @@ h2 {
   padding: 10px;
 }
 .sidebar li:hover {
-    background: #ff6b6b;
-    color: white;
-    transition: background 0.3s ease-in-out;
+  background: #ff6b6b;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
 /* latest projects */
 
 form input,
