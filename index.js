@@ -1,4 +1,4 @@
-// latst projects
+// latest projects
 document.addEventListener("DOMContentLoaded", function () {
   const projects = document.querySelectorAll(".project");
   const sidebarItems = document.querySelectorAll(".sidebar li");
@@ -44,4 +44,60 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// latst projects
+// latest projects
+
+// News&articles
+document.addEventListener("DOMContentLoaded", function () {
+  const articles = document.querySelectorAll(".article");
+
+  articles.forEach((article) => {
+    article.addEventListener("mouseover", function () {
+      this.classList.add("hovered");
+    });
+
+    article.addEventListener("mouseleave", function () {
+      this.classList.remove("hovered");
+    });
+  });
+});
+// News&articles
+// Rosa team
+document.addEventListener("DOMContentLoaded", function () {
+  const logoBoxes = document.querySelectorAll(".logo-box");
+  const clientTitle = document.getElementById("client-title");
+  const clientDesc = document.getElementById("client-desc");
+
+  const clientDetails = {
+    1: { title: "CLIENT 1", desc: "Client 1 is a premium design studio." },
+    2: {
+      title: "CLIENT 2",
+      desc: "Client 2 specializes in branding and identity.",
+    },
+    3: {
+      title: "CLIENT 3",
+      desc: "Client 3 is a leader in web design services.",
+    },
+    4: {
+      title: "CLIENT 4",
+      desc: "Client 4 provides high-quality custom graphics.",
+    },
+    5: {
+      title: "CLIENT 5",
+      desc: "Client 5 focuses on creative digital solutions.",
+    },
+  };
+
+  logoBoxes.forEach((logoBox) => {
+    logoBox.addEventListener("mouseover", function () {
+      const clientId = this.getAttribute("data-client");
+      clientTitle.textContent = clientDetails[clientId].title;
+      clientDesc.textContent = clientDetails[clientId].desc;
+    });
+
+    logoBox.addEventListener("mouseleave", function () {
+      clientTitle.textContent = "CLIENT 2";
+      clientDesc.textContent = "Hover over a logo to see details.";
+    });
+  });
+});
+// Rosa team
