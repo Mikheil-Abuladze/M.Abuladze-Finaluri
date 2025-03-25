@@ -235,6 +235,7 @@ body {
 .services,
 .projects,
 .reviews,
+.projects-section,
 .contact {
   padding: 50px;
   text-align: center;
@@ -318,20 +319,101 @@ body {
   cursor: pointer;
   transition: background 0.3s ease-in-out;
 }
-.project-gallery {
+
+/* latest projects */
+.projects-section h2 {
+  text-align: center;
+}
+/* Section Layout */
+.projects-section {
+  width: 90%;
+  margin: 40px auto;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Sidebar Navigation */
+.content {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  align-items: flex-start;
 }
-.project-gallery img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+
+.sidebar {
+  background: #0e1a36;
+  padding: 20px;
+  color: white;
+  min-width: 200px;
+  text-align: left;
 }
-.project-gallery img:hover {
-  transform: scale(1.1);
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
+
+.sidebar li {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+}
+
+.sidebar li.highlight {
+  color: #ff3c3c;
+  position: relative;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dimmed Effect */
+.dimmed {
+  opacity: 0.2;
+}
+/* Default inactive state */
+.sidebar li:not(.selected) {
+  color: white;
+}
+
+/* Highlight when selected */
+.sidebar li.selected {
+  background: #ff3c3c; /* Change background */
+  color: white; /* Change text color */
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+}
+.sidebar li:hover {
+    background: #ff6b6b;
+    color: white;
+    transition: background 0.3s ease-in-out;
+/* latest projects */
+
 form input,
 form textarea {
   display: block;
