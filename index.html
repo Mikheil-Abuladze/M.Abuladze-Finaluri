@@ -336,15 +336,47 @@
 
     <!-- rosa team -->
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+    <section class="contact-form-section">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <input
+          class="your-name"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          class="your-email"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <input
+          class="your-website"
+          type="text"
+          name="website"
+          placeholder="Your Website"
+        />
+        <textarea
+          class="your-message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button class="send-message-btn" type="submit">SEND MESSAGE</button>
       </form>
     </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <p>Thank you for getting in touch! We appreciate you contacting us.</p>
+        <button id="close-modal">OK</button>
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

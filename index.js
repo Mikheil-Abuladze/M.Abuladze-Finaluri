@@ -101,3 +101,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // Rosa team
+// form
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const modal = document.getElementById("modal");
+  const closeModal = document.getElementById("close-modal");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      website: formData.get("website"),
+      message: formData.get("message"),
+    };
+
+    fetch("https://borjomi.loremipsum.ge/api/send-message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.status === 1) {
+          modal.style.display = "flex"; // Show modal
+          form.reset(); // Reset form fields
+        } else {
+          alert("Error: Unable to send message.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("There was a problem sending the message.");
+      });
+  });
+
+  // Close modal when clicking OK
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+});
+// form
