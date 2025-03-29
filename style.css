@@ -66,8 +66,8 @@ body {
 }
 .nullone {
   position: absolute;
-  top: -20px;
-  right: 0px;
+  top: -75px;
+  right: -20px;
   font-size: 153px;
   font-family: "poppins-extrabold";
   grid-area: 1/1;
@@ -85,13 +85,11 @@ body {
   text-align: center;
 }
 .hi {
+  position: absolute;
   margin-top: 385px;
   margin-left: 1029px;
   text-align: left;
   font-family: "GlacialIndifference-Bold";
-  z-index: 9;
-}
-.hi h1 {
   z-index: 10;
 }
 .my-proffession {
