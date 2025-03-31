@@ -197,11 +197,12 @@ body {
 }
 .contact-info {
   background-color: #131a36;
-  width: 1820px;
+  width: 100%;
   height: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: -20px;
 }
 .contact-info-phone {
   border-color: #ddd;
@@ -262,7 +263,6 @@ body {
 .team-section,
 .contact-form-section,
 .contact {
-  padding: 50px;
   text-align: center;
   animation: slideUp 1.5s ease-in-out;
 }
@@ -294,56 +294,71 @@ body {
 .service:hover {
   transform: translateY(-10px);
 }
+
+/* Reviews section */
 .reviews {
   background-image: url(Staff/images/clip.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.reviews p {
+.user-review {
+  text-align: right;
+  letter-spacing: 0.45px;
   color: #ffffff;
-  padding-right: 20px;
+  opacity: 1;
+  position: absolute;
+  left: 21.719vw;
+}
+.user-border {
+  background: #b97679 0% 0% no-repeat padding-box;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px dotted #ffffff;
+  position: absolute;
+  top: 180px;
+  padding: 20px;
 }
 .img-quote {
   width: 50px;
   height: 50px;
   top: 180px;
-  left: 1200px;
+  left: 1070px;
   position: absolute;
 }
 .user-profession {
   color: #e93656;
   position: absolute;
-  left: 1200px;
+  left: 1070px;
 }
 .user-name {
   color: #ffffff;
   position: absolute;
-  left: 1200px;
-  top: 370px;
+  left: 1070px;
+  top: 300px;
 }
-.quotes-btn {
+.review-btns {
   position: absolute;
+  right: 25vw;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin: 20px;
-  top: 222px;
-  left: 1320px;
 }
-.quotes-btn button {
-  background: #e93656;
-  color: #ffffff;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+.reviews-btn {
+  background: #ffffff00 0% 0% no-repeat padding-box;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  margin: 10px;
 }
+.reviews-btn:hover {
+  border-color: #e93656;
+}
+/* reviews section */
 
 /* latest projects */
 .projects-section h2 {

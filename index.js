@@ -11,7 +11,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change slide every 5 seconds
+  setTimeout(showSlides, 5000); // Change slide every 5s seconds
 }
 
 // Initialize slideshow
@@ -166,3 +166,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // form
+//reviews
+const reviews = [
+  {
+    review: "Just a pleasure to work with. What a guy",
+    image: "Staff/images/d3.svg",
+    profession: "Graphic Designer",
+    name: "Mau Thomas",
+  },
+  {
+    review: "Amazing experience! Highly recommended.",
+    image: "Staff/images/d4.svg",
+    profession: "Web Developer",
+    name: "Sarah Lee",
+  },
+  {
+    review: "Superb service and great communication.",
+    image: "Staff/images/d5.svg",
+    profession: "Marketing Expert",
+    name: "John Doe",
+  },
+];
+
+const reviewText = document.querySelector(".user-review");
+const reviewImage = document.querySelector(".user-border");
+const professionText = document.querySelector(".user-profession");
+const userName = document.querySelector(".user-name");
+const buttons = document.querySelectorAll(".reviews-btn");
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    reviewText.textContent = reviews[index].review;
+    reviewImage.src = reviews[index].image;
+    professionText.textContent = reviews[index].profession;
+    userName.textContent = reviews[index].name;
+  });
+});
+//
