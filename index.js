@@ -203,3 +203,33 @@ buttons.forEach((button, index) => {
   });
 });
 //reviews
+// skills bar
+document.addEventListener("DOMContentLoaded", function () {
+  const skills = {
+    html: "85%",
+    css: "75%",
+    js: "60%",
+    design: "45%",
+  };
+
+  const bars = document.querySelectorAll(".progress");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const className = [...bar.classList].find((cls) => skills[cls]);
+          if (className) {
+            bar.style.width = skills[className];
+            observer.unobserve(bar); // Animate only once
+          }
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  bars.forEach((bar) => observer.observe(bar));
+});
+// skills bar

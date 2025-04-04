@@ -169,10 +169,13 @@ body {
   width: 100%;
   max-width: 300px;
   margin-left: 50px;
+  font-family: "GlacialIndifference-Bold";
+  font-size: 20px;
+  text-align: left;
 }
 .barr {
   margin: 20px 0;
-  animation: animate 1s linear forwards;
+  animation: animate s linear forwards;
 }
 .progress-barr {
   width: 100%;
@@ -187,7 +190,9 @@ body {
   height: 100%;
   border-radius: 10px;
   width: 50%;
-  background-color: #e93656;
+  background: #e93656;
+  width: 50%; /* Will animate this */
+  transition: width 3s ease-in-out;
 }
 /* skills bar */
 .about {
