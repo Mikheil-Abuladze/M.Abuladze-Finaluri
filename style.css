@@ -230,6 +230,7 @@ body {
   font-size: 15px;
   background-color: #e93656;
 }
+/* contact info */
 .contact-info {
   background-color: #131a36;
   width: 100%;
@@ -269,7 +270,16 @@ body {
   top: -50px;
   position: absolute;
 }
-
+.contact-info-phone:hover {
+  background-color: #e93656;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
+/* contact info */
 .hero {
   position: relative;
   text-align: center;
