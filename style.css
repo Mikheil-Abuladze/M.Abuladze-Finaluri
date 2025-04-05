@@ -669,14 +669,13 @@ h2 {
 }
 
 /* Article Layout */
-.article,
 .article-1,
 .article-2,
 .article-3 {
   position: relative;
   display: flex;
   align-items: center;
-  background: white;
+  background: #fafafa;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -725,24 +724,29 @@ h2 {
 
 .article-text h3 {
   margin: 10px 0;
-  font-size: 1.5em;
+  font-size: 40px;
+  font-family: "GlacialIndifference-Bold";
+  color: #161616;
 }
 
 .article-text .company {
-  color: gray;
-  font-size: 0.9em;
+  color: #494949;
+  font-family: "Muli";
+  font-size: 16px;
 }
 
 .article-text .description {
-  color: #555;
-  font-size: 0.95em;
+  color: #494949;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 .read-more {
   display: inline-block;
   margin-top: 10px;
-  color: #0081ff;
+  color: #494949;
+  font-family: "Muli";
+  font-size: 13px;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
@@ -1123,5 +1127,11 @@ textarea {
   .user-border {
     position: absolute;
     right: 255px;
+  }
+  .projects-section {
+    height: 1300px;
+  }
+  .article-1 {
+    margin-left: 70px;
   }
 }
