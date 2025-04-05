@@ -302,10 +302,14 @@ body {
   .Phone-number {
     top: 200px;
   }
+}
 @media screen and (max-width: 1020px) {
   .Phone-number {
-    width: 190px;
+    width: 100px;
     padding: 0px;
+  }
+  .Phone-number p {
+    width: 50px;
   }
   .contact-info {
     height: 300px;
@@ -1072,3 +1076,23 @@ textarea {
   background: #0056b3;
 }
 /* Form */
+@media screen and (max-width: 1020px) {
+  .hi {
+    margin-top: 385px;
+    margin-left: 800px;
+  }
+  .satisfied {
+    margin-left: 380px;
+    margin-top: -140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hi {
+    margin-top: 385px;
+    margin-left: 500px;
+  }
+  .satisfied {
+    margin-left: 380px;
+    margin-top: -290px;
+  }
+}
