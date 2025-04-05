@@ -152,6 +152,12 @@ body {
   font-family: "Montserrat-Bold";
   z-index: 10;
 }
+@media screen and (max-width: 1325px) {
+  .satisfied {
+    margin-left: 950px;
+    margin-top: -200px;
+  }
+}
 .progress-bar {
   width: 340px;
   height: 6px;
@@ -254,6 +260,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: -20px;
+  position: relative;
 }
 .contact-info-phone {
   border-color: #ddd;
@@ -282,6 +289,20 @@ body {
   top: -25;
 }
 @media screen and (max-width: 1325px) {
+  .Phone-number {
+    width: 190px;
+    padding: 0px;
+  }
+  .contact-info {
+    height: 300px;
+  }
+  .contact-info-phone {
+    margin-top: 50px;
+  }
+  .Phone-number {
+    top: 200px;
+  }
+@media screen and (max-width: 1020px) {
   .Phone-number {
     width: 190px;
     padding: 0px;
@@ -475,6 +496,20 @@ body {
   border: 2px solid #ffffff;
   opacity: 1;
   margin: 10px;
+}
+@media screen and (max-width: 1325px) {
+  .img-quote {
+    left: 770px;
+  }
+  .user-profession {
+    left: 770px;
+  }
+  .user-name {
+    left: 770px;
+  }
+  .user-review {
+    left: 200px;
+  }
 }
 .reviews-btn:hover {
   border-color: #e93656;
@@ -673,6 +708,11 @@ h2 {
 @media screen and (max-width: 1325px) {
   .article-1 {
     margin-left: 118px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .article-1 {
+    margin-left: 87px;
   }
 }
 .article-2 {
