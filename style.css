@@ -139,6 +139,10 @@ body {
   font-family: "Roboto-Regular";
   src: url(Staff/fonts/Roboto-Regular.ttf);
 }
+@font-face {
+  font-family: "japoki-regular";
+  src: url(Staff/fonts/Jaapokki-Regular.ttf);
+}
 
 /* loading bar */
 .onehundred {
@@ -943,6 +947,7 @@ button:hover {
   color: #ffffff;
   font-size: 45px;
   position: absolute;
+  font-family: "japoki-regular";
   top: 152px;
   left: 809px;
 }
@@ -986,6 +991,8 @@ textarea {
   background: #daaf1b00 0% 0% no-repeat padding-box;
   border: 2px solid #e93656;
   opacity: 1;
+  font-family: "GlacialIndifference-Bold";
+  font-size: 12px;
   width: 187px;
   height: 50px;
   color: #e93656;
