@@ -1079,6 +1079,22 @@ textarea {
     font-size: 10px;
     width: 170px;
   }
+  .user-review {
+    left: 50px;
+  }
+  .review-btns {
+    position: absolute;
+    right: 70px;
+  }
+  .img-quote {
+    left: 640px;
+  }
+  .user-profession {
+    left: 640px;
+  }
+  .user-name {
+    left: 640px;
+  }
 }
 @media screen and (max-width: 767px) {
   .hi {
@@ -1091,5 +1107,21 @@ textarea {
   }
   .about img {
     display: none;
+  }
+  .user-review {
+    left: 4px;
+  }
+  .user-name {
+    display: none;
+  }
+  .img-quote {
+    display: none;
+  }
+  .user-profession {
+    display: none;
+  }
+  .user-border {
+    position: absolute;
+    right: 255px;
   }
 }
