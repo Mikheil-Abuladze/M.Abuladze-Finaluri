@@ -303,24 +303,7 @@ body {
     top: 200px;
   }
 }
-@media screen and (max-width: 1020px) {
-  .Phone-number {
-    width: 100px;
-    padding: 0px;
-  }
-  .Phone-number p {
-    width: 50px;
-  }
-  .contact-info {
-    height: 300px;
-  }
-  .contact-info-phone {
-    margin-top: 50px;
-  }
-  .Phone-number {
-    top: 200px;
-  }
-}
+
 .Phone-number h3 {
   top: -50px;
   position: absolute;
@@ -329,11 +312,6 @@ body {
 .contact-info-phone:hover {
   background-color: #e93656;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 768px) {
-  .contact-info {
-    flex-direction: column;
-  }
 }
 .Phone-number h3 {
   font-family: "glacialindifference-bold";
@@ -1085,6 +1063,22 @@ textarea {
     margin-left: 380px;
     margin-top: -140px;
   }
+  .contact-info-phone {
+    margin: 80px;
+  }
+  .Phone-number {
+    width: 150px;
+    padding: 0px;
+  }
+  .Phone-number h3 {
+    display: none;
+  }
+  .Phone-number p {
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    width: 170px;
+  }
 }
 @media screen and (max-width: 767px) {
   .hi {
@@ -1094,5 +1088,8 @@ textarea {
   .satisfied {
     margin-left: 380px;
     margin-top: -290px;
+  }
+  .about img {
+    display: none;
   }
 }
