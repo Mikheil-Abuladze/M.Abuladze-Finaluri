@@ -124,6 +124,10 @@ body {
   font-family: "Muli-regular";
   src: url(Staff/fonts/Muli-Regular.ttf);
 }
+@font-face {
+  font-family: "muli-light";
+  src: url(Staff/fonts/Muli-Light.ttf);
+}
 
 /* loading bar */
 .onehundred {
@@ -321,6 +325,19 @@ body {
   text-align: center;
   animation: slideUp 1.5s ease-in-out;
 }
+.service span {
+  font-family: "GlacialIndifference-Bold";
+  font-size: 22px;
+}
+.service:hover span {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.service p {
+  font-family: "muli-light";
+  font-size: 14px;
+  color: #ececec;
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -347,7 +364,9 @@ body {
   width: 60px;
 }
 .service:hover {
-  transform: translateY(-10px);
+  background-color: #15263e;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 .service-desc {
   margin-top: 10px;
