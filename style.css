@@ -270,6 +270,7 @@ body {
   top: -50px;
   position: absolute;
 }
+
 .contact-info-phone:hover {
   background-color: #e93656;
   transition: all 0.3s ease-in-out;
@@ -279,6 +280,15 @@ body {
     flex-direction: column;
   }
 }
+.Phone-number h3 {
+  font-family: "glacialindifference-bold";
+  font-size: 25px;
+}
+.Phone-number p {
+  font-family: "muli";
+  font-size: 14px;
+}
+
 /* contact info */
 .hero {
   position: relative;
@@ -338,6 +348,20 @@ body {
 }
 .service:hover {
   transform: translateY(-10px);
+}
+.service-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.service:hover .service-desc {
+  opacity: 1;
+  max-height: 80px; /* Enough space for the text */
 }
 
 /* Reviews section */
